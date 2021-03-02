@@ -1,8 +1,9 @@
+/*Give .square-container properties to make children align horizontally and wrap across page*/
 .square-container {
   display: flex;
   flex-wrap: wrap;
 }
-
+/*Gave .square properties to turn into black squares with space in-between*/
 .square {
   height: 100px;
   width: 100px;
