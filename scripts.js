@@ -26,6 +26,16 @@ squareBtn.addEventListener('click', () => {
     divContainer.appendChild(squareDiv);
     //Give squareDiv id of idNum
     squareDiv.id = idNum;
+    //Create span
+    const span = document.createElement('span');
+    //Create text
+    const spanText = document.createTextNode(idNum);
+    //Give span className "tooltip"
+    span.className = "tooltip";
+    //Insert spanText into span
+    span.appendChild(spanText);
+    //Insert span into squareDiv
+    squareDiv.appendChild(span);
     //Add 1 to idNum
     idNum++;
-})
+});
