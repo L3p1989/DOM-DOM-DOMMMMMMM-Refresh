@@ -14,6 +14,8 @@ const divContainer = document.createElement('div');
 divContainer.className = "square-container"
 //insert divContainer into body
 body.appendChild(divContainer);
+//Create number value
+let idNum = 1;
 //Create click event listener for squareBtn
 squareBtn.addEventListener('click', () => {
     //Create div
@@ -22,4 +24,8 @@ squareBtn.addEventListener('click', () => {
     squareDiv.className = "square";
     //Insert squareDiv into body
     divContainer.appendChild(squareDiv);
+    //Give squareDiv id of idNum
+    squareDiv.id = idNum;
+    //Add 1 to idNum
+    idNum++;
 })
