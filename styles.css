@@ -10,3 +10,18 @@
   background-color: black;
   margin: 5px;
 }
+/*Gave .tooltip properties to center inside .square with white text but is not visible*/
+.tooltip {
+  visibility: hidden;
+  display: inherit;
+  padding: 39px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/*hovering over .square makes .tooltip visible*/
+.square:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
