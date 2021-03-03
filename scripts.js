@@ -49,4 +49,9 @@ squareBtn.addEventListener('click', () => {
         //make squareDiv bg-color a combination of `r`, `g`, and `b`
         squareDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     });
+    //add dblclick event listener to squareDiv
+    squareDiv.addEventListener('dblclick', () => {
+        //if squareDiv is even and has a sibling to the right remove sibling to the right, otherwise alert. if squareDiv is odd and has a sibling to the left remove sibling to the left, otherwise alert.
+        squareDiv.id % 2 == 0 && squareDiv !== divContainer.lastChild ? divContainer.removeChild(squareDiv.nextSibling) : squareDiv.id % 2 == 0 && squareDiv == divContainer.lastChild ? alert("There are no squares to remove!") : squareDiv.id % 2 == 1 && squareDiv !== divContainer.firstChild ? divContainer.removeChild(squareDiv.previousSibling) : squareDiv.id % 2 == 1 && squareDiv == divContainer.firstChild ? alert("There are no squares to remove!") : null
+    });
 });
