@@ -1,7 +1,8 @@
-/*Give .square-container properties to make children align horizontally and wrap across page*/
+/*Give .square-container properties to make children align horizontally and wrap across page, centers all children*/
 .square-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 /*Gave .square properties to turn into black squares with space in-between*/
 .square {
@@ -24,4 +25,18 @@
 .square:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+/*center button, text color white, custom blue bg color, custom blue border color, solid transparent border, rounded edges, pointer cursor, no highlight*/
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #0275d8;
+  border-color: #2e6da4;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
 }
