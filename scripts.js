@@ -38,4 +38,15 @@ squareBtn.addEventListener('click', () => {
     squareDiv.appendChild(span);
     //Add 1 to idNum
     idNum++;
+    //add click event listener to squareDiv
+    squareDiv.addEventListener('click', () => {
+        //make r a random number from 0-255
+        const r = Math.floor(Math.random() * 256);
+        //make g a random number from 0-255
+        const g = Math.floor(Math.random() * 256);
+        //make b a random number from 0-255
+        const b = Math.floor(Math.random() * 256);
+        //make squareDiv bg-color a combination of `r`, `g`, and `b`
+        squareDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    });
 });
